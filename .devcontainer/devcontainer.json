@@ -1,0 +1,19 @@
+{
+	"name": "Fyle Backend Project",
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	"service": "fyle_backend",
+	"workspaceFolder": "/fyle_backend",
+	"runServices": [
+		"fyle_backend"
+	],
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-python.vscode-pylance"
+			]
+		}
+	}
+}

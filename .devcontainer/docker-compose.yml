@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fyle_backend:
+    build: 
+      context: ../.
+      dockerfile: Dockerfile
+      args:
+        - USER=${USER}
+    volumes:
+      - ../:/fyle_backend
+
+    ports:
+      - 7756:7755
+    container_name: fyle_backend_dev
+    command: /bin/sh -c "while sleep 1000; do :; done"
